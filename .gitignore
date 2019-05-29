@@ -1,0 +1,7 @@
+*.csv
+*.pkl
+nohup.out
+log/*
+out/*
+*~
+results/*

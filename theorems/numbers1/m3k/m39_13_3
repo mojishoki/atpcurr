@@ -1,0 +1,10 @@
+cnf(a1,axiom,(0 != s(X))).
+cnf(a2,axiom,(s(X) != s(Y) | X = Y)).
+% fof(a2,axiom,(![X,Y]: (( s(X) != s(Y)) | (X = Y)))).
+cnf(a3,axiom,(plus(X,0) = X)).
+cnf(a4,axiom,(plus(X,s(Y)) = s(plus(X,Y)))).
+cnf(a5,axiom,(mul(X,0) = 0)).
+cnf(a6,axiom,(mul(X,s(Y)) = plus(mul(X,Y),X))).
+cnf(a7,axiom,(X = 0 | s(pred(X)) = X)).
+%fof(a7,axiom,(![X,Y]: ((X = 0) | s(pred(X)) = X))).
+cnf(m39_13_3,negated_conjecture,(mul(s(s(s(s(s(s(s(s(s(s(s(s(s(0))))))))))))),s(s(s(0)))) != s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(s(0))))))))))))))))))))))))))))))))))))))))).
